@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+// import BlogPost from './App-A/BlogPost';
+import PersonForm from './App-B/PersonForm.js';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      display: 'hello',
+    }
+  }
+  render() {
+    return(
+      <div>
+      <button className="btn btn-primary">A</button>
+      <button className="btn btn-primary">B</button>
+      <button className="btn btn-primary">C</button>
+      <button className="btn btn-primary">D</button>
+      <button className="btn btn-primary">E</button>
+      <PersonForm/>
+      </div>
+    )
+  }
 }
 
 export default App;
