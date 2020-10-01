@@ -1,6 +1,7 @@
 import React from 'react';
 // import BlogPost from './App-A/BlogPost';
-import PersonForm from './App-B/PersonForm.js';
+// import PersonForm from './App-B/PersonForm.js';
+import BlogReader from './App-C/BlogReader.js';
 import './App.css';
 
 class App extends React.Component {
@@ -18,7 +19,7 @@ class App extends React.Component {
       <button className="btn btn-primary">C</button>
       <button className="btn btn-primary">D</button>
       <button className="btn btn-primary">E</button>
-      <PersonForm/>
+      <BlogReader/>
       </div>
     )
   }
